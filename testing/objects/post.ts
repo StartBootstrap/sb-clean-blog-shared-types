@@ -5,6 +5,7 @@ import {
     UpdatePostParams,
     UpdatePostPayload,
     DeletePostParams,
+    ReadPostQuery,
 } from '../../typings/post';
 
 export class TestResultsPost implements ResultsPost {
@@ -32,6 +33,10 @@ export class TestCreatePostPayload implements CreatePostPayload {
 
 export class TestReadPostParams implements ReadPostParams {
     id = '00000000-0000-0000-0000-000000000001';
+}
+
+export class TestReadPostQuery implements ReadPostQuery {
+    findBy: 'slug' = 'slug';
 }
 
 /* Update */
